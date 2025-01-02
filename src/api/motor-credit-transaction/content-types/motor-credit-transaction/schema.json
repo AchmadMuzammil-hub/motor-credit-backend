@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "motor_credit_transactions",
+  "info": {
+    "singularName": "motor-credit-transaction",
+    "pluralName": "motor-credit-transactions",
+    "displayName": "motor-credit-transaction"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Nama_Pemohon": {
+      "type": "string"
+    },
+    "Nomor_KTP": {
+      "type": "string"
+    },
+    "Nomor_HP": {
+      "type": "string"
+    },
+    "Alamat": {
+      "type": "string"
+    },
+    "Jumlah_Kredit": {
+      "type": "decimal"
+    },
+    "Tenor": {
+      "type": "biginteger"
+    },
+    "Bunga": {
+      "type": "integer"
+    },
+    "Status_Transaksi": {
+      "type": "enumeration",
+      "enum": [
+        "Ex:",
+        "Pending",
+        "Disetujui",
+        "Ditolak"
+      ]
+    }
+  }
+}
